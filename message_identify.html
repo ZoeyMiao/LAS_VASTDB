@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script src="message_identify.js"></script>
+
+<body>
+    <h1>VAST CHALLENGE</h1>
+    <br>
+    <form id="searchForm" onSubmit="search(); return false">
+        Timestamp:
+        <input type="datetime-local" id="timestamp" step = '2'><br>
+        <br>
+        Margin (in seconds):
+        <input type="number" id="margin"><br>
+        <br>
+        Location:
+        <select id="location">
+            <option value="Tundra Land">Tundra Land</option>
+            <option value="Entry Corridor">Entry Corridor</option>
+            <option value="Kiddle Land">Kiddle Land</option>
+            <option value="Wet Land">Wet Land</option>
+            <option value="Coaster Alley">Coaster Alley</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit"><br>
+    </form> 
+    <br>
+    <h2>Park Map</h2>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <h2>MATCHED RESULT</h2>
+    
+
+
+    
+    <p></p>
+</body>
+</html>
